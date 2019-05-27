@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="assets/css/tax.css" rel="stylesheet">
+    <title>landing page</title>
+</head>
+<body>
+    <header>
+        <div><img src="assets/images/dec png.png" alt=""></div>
+        <ul>
+            <li><a href="#">WELCOME</a></li>
+            <li><a href="">LOGIN</a>
+                <ul>
+                    <li><input type="text" placeholder="EMAIL" class="dropdown"></li>
+                    <li><input type="password" placeholder="PASSWORD" class="dropdown"></li>
+                    <li><button class="primary-btn">login</button></li>
+                </ul>
+            </li>
+
+        </ul>
+    </header>
+    <!-- ======= the whole page -->
+    <div id="wrapper">
+        <!-- ========the left box of the container ==================-->
+        <div id="left">
+            <!-- ========the signup container starts here logo etc inside it=============== -->
+           <div id="signup">
+              <div class="logo">
+                 <!-- <img src="assets/images/dec png.png" alt="">  -->
+              </div> 
+              <!-- ========== the sign up form starts here ===== -->
+              <form action="primary-btn.html" onsubmit="return validateForm()">
+                  <!-- ========Fname input field ============= -->
+                
+                <div>
+                    <input type="text" id="fname" placeholder="First Name" >
+                    <div id="error"></div>
+                </div>
+                  <!-- ========Lname input field ============= -->
+                <div>
+                    <input type="text" id="lname" placeholder="Last Name">
+                    <div id="error"></div>
+                </div>
+                <!-- ========DOB input field ============= -->
+                <div>
+                    <input type="date" id="dob" placeholder="Date of Birth" >
+                    <div id="error"></div>
+                </div>
+                <!-- ========self employed option field ============= -->
+                <div class="gender">
+                  <select name="Employement status" class="option">
+                    <option value="">Self employed</option>
+                    <option value="">Employed</option>
+                  </select>      
+                </div>
+                <!-- ========gender option field ============= -->
+                <!-- <div class="gender">
+                    <select name="Gender" class="option">
+                        <option >Female</option>
+                        <option >Male</option>
+                    </select>      
+                </div> -->
+                 <!-- ========company name input field ============= -->
+                 <div>
+                        <input type="text" id="compname" placeholder="Company Name">
+                        <div id="error"></div>
+                </div>
+                 <!-- ========company address input field ============= -->
+                 <div>
+                        <input type="text" id="compaddress" placeholder="Company Address">
+                        <div id="error"></div>
+                </div>
+                 <!-- ========email input field ============= -->
+                 <div>
+                        <input type="email" id="email" placeholder="Email">
+                        <div id="error"></div>
+                </div>
+                 <!-- ========password input field ============= -->
+                 <div>
+                        <input type="password" id="password"placeholder="Password">
+                        <div id="error"></div>
+                </div>
+                <!-- =============confirm password============= -->
+                <div>
+                        <input type="password" id="cpassword" placeholder="Confirm Password">
+                        <div id="error"></div>
+                </div>
+                
+                <button class="primary-btn">Sign up</button>
+              </form> 
+              <div id="empty"></div>
+              <!-- ===========the OR ======= -->
+              <div class="or">
+                <hr class="bar">
+                <span>OR</span>
+                <hr class="bar">
+              </div>
+              <a href="" class="link" >Sign in with </a>
+              <a href="" class="secondary-btn">Google account</a>
+              <!-- ==========the sign up form ends here =========== -->
+           </div> 
+           <!-- =========the sign up box ends here =============== -->
+           <!-- ============ the footer starts here ============= -->
+           <footer id="main-footer">
+               <p>Copyright &copy; 2019, Projaro income tax calculator</p>
+           </footer>
+        </div>
+        <!-- =========== the left box ends here=========================== -->
+        <div id="right">
+        <!-- ===========the right box begins here =============== -->
+            <div id="showcase">
+                <div class="showcase-content">
+                <h1 class="showcase-text">let's help you calculate your income tax 
+                <strong>Properly</strong></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/tax.js"></script>
+</body>
+</html> 

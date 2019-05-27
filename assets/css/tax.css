@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300&display=swap');
+*{
+    box-sizing: border-box
+}
+body {
+    font-family: 'Roboto Slab', serif;
+    font-weight:  300;
+    background: #181818;
+    color: white;
+    overflow:hidden; 
+}
+/* the nav bar =================*/
+header{
+    width: 100%;
+    background: rgba(245, 245, 245, 0.11);
+}
+header img{
+    width:3em;
+    align-self: auto;
+    margin-bottom: -2em;
+}
+header ul{
+    display:flex;
+    justify-content: flex-end;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+header ul li:nth-child(1).hover {
+	background-color: #16a085;
+}
+header ul li{
+    list-style: none;
+    position: relative;
+    padding: 10px 15px;
+    transition:  0.5s;
+    box-sizing: border-box;
+    border-right: 1px solid #f96816
+}
+/* header ul li:hover */
+
+/* header ul li:last-child */
+header ul li a {
+    text-decoration: none;
+    padding:0 20px;
+    color: #fff; 
+
+}
+/* styling the submenu========================= */
+header ul li ul{
+    position: absolute;
+    top: 45px;
+    left: 0;
+    background: rgba(0, 0, 0, 0.658);
+    display: block;
+    width: 200px;
+    height: 150px;
+    transition: 0.5;
+    opacity: 0;
+    visibility: hidden;
+}
+header ul li:hover ul {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* reducing the logo size */
+.logo img {
+    width: 5em;
+    height: auto;
+    margin-top: 1em;
+}
+/* styling all the font weight for the headings */
+h1,
+h2,
+h3,
+h4{
+    font-weight: 300;}
+/* using flex box for the whole body putting them in rows */
+#wrapper{
+    display: flex;
+    flex-direction: row;
+}
+/* moving the left and right boxes side by side 50% each  */
+#left{
+    display:flex;
+    flex-direction: column;
+    flex:1;
+    align-items: center;
+    justify-content: center;
+    height: 100vh ;
+}
+
+#right{
+    flex:1;
+}
+/* the =========signup=========== */
+#signup{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    padding-bottom: -4em;
+    
+
+}
+#signup form{
+    width: 70%;
+    float: right;
+    
+    /* padding-bottom: -4em; */
+    
+} 
+
+/* styling =============the signup label== */
+#signup ::placeholder{
+    font-size: 1rem;
+    line-height: -5em;
+    font-weight:300;
+    color: #ccc;
+    /* Other styling... */
+    
+}
+
+#signup  #fname{
+    /* margin-bottom:0rem; */
+    width:100%;
+    border-radius: 2px;
+    background: #181818;
+    border: 1px solid #555;
+    color: #ccc;
+    padding: 0.2rem 0.5rem;
+    line-height:1.3rem;
+    margin-bottom: 0.8em;
+
+}
+#signup  #lname{
+    /* margin-bottom:0rem; */
+    width:100%;
+    border-radius: 2px;
+    background: #181818;
+    border: 1px solid #555;
+    color: #ccc;
+    padding: 0.2rem 0.5rem;
+    margin-bottom: 0.8em;
+    line-height:1.3rem;
+
+}
+#signup  #dob{
+    /* margin-bottom:0rem; */
+    width:100%;
+    border-radius: 2px;
+    background: #181818;
+    border: 1px solid #555;
+    color: #ccc;
+    padding: 0.2rem 0.5rem;
+    line-height:1.3rem;
+
+}
+#signup  #compname{
+    margin-top:-2rem; 
+    width:100%;
+    border-radius: 2px;
+    background: #181818;
+    border: 1px solid #555;
+    color: #ccc;
+    padding: 0.2rem 0.5rem;
+    margin-bottom:-20rem; 
+    line-height:1.3rem;
+
+}
+#signup  #compaddress{
+    margin-top:-8rem; 
+    width:100%;
+    border-radius: 2px;
+    background: #181818;
+    border: 1px solid #555;
+    color: #ccc;
+    padding: 0.2rem 0.5rem;
+    line-height:1.3rem;
+
+}
+#signup  #email{
+    /* margin-bottom:0rem; */
+    width:100%;
+    border-radius: 2px;
+    background: #181818;
+    border: 1px solid #555;
+    color: #ccc;
+    padding: 0.2rem 0.5rem;
+    /* line-height:1.3rem; */
+
+}
+#signup  #password{
+    /* margin-bottom:0rem; */
+    width:100%;
+    border-radius: 2px;
+    background: #181818;
+    border: 1px solid #555;
+    color: #ccc;
+    padding: 0.2rem 0.5rem;
+    /* line-height:1.3rem; */
+
+}
+#signup  #cpassword{
+    /* margin-bottom:0rem; */
+    width:100%;
+    border-radius: 2px;
+    background: #181818;
+    border: 1px solid #555;
+    color: #ccc;
+    padding: 0.2rem 0.5rem;
+    /* line-height:1.3rem; */
+
+}
+#signup .gender{
+   display: flex;
+   flex-direction: row;
+   margin-bottom: 0.2rem;
+   align-items: center;
+}
+#signup .gender .option{
+    width: 60%;
+    display: flex;
+    align-content: center;
+    background:#181818;
+    color: #ccc;
+}
+#signup .gender .option:hover{
+    background-color: #ff7b39; 
+    border-color: #ccc;
+}
+/* button */
+#signup .primary-btn{
+    width: 100%;
+    margin-top: 1em;
+}
+#signup .secondary-btn,
+.or{
+    width: 60%;
+}
+#signup .link{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    padding: -2em 0.8rem;
+}
+.primary-btn{
+    padding: 0.5rem 0.5rem;
+    height:2rem;
+    display: block;
+    border: 0;
+    border-radius: 2px;
+    font-weight: 500;
+    background: #f96816;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.5s;
+}
+.primary-btn:hover{
+    background-color: #ff7b39; 
+}
+
+.secondary-btn{
+    padding: 0.5rem 0.5rem;
+    height:2rem;
+    display: block;
+    border: 1px solid #f4f4f4;
+    border-radius: 2px;
+    font-weight: 500;
+    background:none; 
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.5s;
+}
+.secondary-btn:hover{
+    border-color: #ff7b39; 
+    color: #f96816;
+}
+#error {
+    color: red;
+    font-size: 0.8em;
+}
+#empty{
+    color: red;
+    font-size: 0.8em;  
+}
+.wrong-input{
+    border: 1px solid red;
+    animation: shake 0.5s;
+    animation-iteration-count: 2;
+}
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+
+/* =================sign up OR====== */
+#signup .or{
+   display:flex;
+   flex-direction: row;
+   margin-bottom: 1.2rem;
+   align-items: center; 
+}
+#signup .or .bar {
+    flex:auto;
+    border:none;
+    height:1px;
+    background: #aaa;
+}
+#signup .or span {
+    color: #ccc;
+    padding: 0 0.8rem;     
+}
+/* ===============showcase=========== */
+#showcase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../images/9999-unsplash.jpg") no-repeat center center / cover;
+    height: 100vh;
+    text-align: center;
+}
+#showcase .showcase-text{
+    font-size: 3rem;
+    width:100%;
+    color:#fff;
+    margin-bottom: 1.5rem;
+}
+
+/* ================footer============ */
+#main-footer {
+    color: #ccc;
+    text-align: center;
+    font-size: 0.8rem;
+    max-width: 80%;
+    padding-bottom: 3rem;
+}
+#main-footer p {
+    color: #f96816;
+    text-decoration: underline; 
+}
+ /* media queries */
+ @media (min-width: 1200px) {
+     #left {
+         flex: 4;
+     }
+     #right {
+         flex: 6;
+     }
+ }
+ @media (max-width: 768px) {
+     #right {
+         display: none;
+     }
+ }
+ /* for nav bar */
+@media (max-width: 768px)
+{
+    header ul{
+        display: block;
+    }
+    header ul li{
+        display: block;
+    }
+    header ul li ul{
+        width: 100%;
+        z-index: 1;
+    }
+}
